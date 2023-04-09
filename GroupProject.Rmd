@@ -1,0 +1,73 @@
+---
+title: "Data Exploration Project"
+author: "Veng Leap Chan"
+date: '2022-06-10'
+output: 
+  html_document:
+    theme: paper 
+    toc: TRUE
+    toc_float: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Our Data Set
+
+Our data set was provided by Kaggle, called the [“U.S. Minimum Wage by State from 1968 to 2020”](https://www.kaggle.com/datasets/lislejoem/us-minimum-wage-by-state-from-1968-to-2017). Our data set provided an insight into the federal, state, and effective minimum wages of different States through 1968 to 2020, in which, effective minimum wage describes the higher of federal or state minimum wage. 
+
+We intend to observe the change in the overall real minimum wage, in which, the real minimum wage is adjusted for inflation, the distribution of real minimum wages across the states, and other relationship between real and actual federal, state, and effective minimum wages. 
+
+The data for this dataset was collected by The United States Department of Labor. Though this data set was said to be clean, our team did more cleaning by looking for missing data as well as any discrepancies in our data set. Though our rigorous checks and scanning, we did not find any discrepancies and proceeded with our data. 
+
+The story we are trying to present is that coastal states tend to have higher real, effective minimum wages, as well as, minimum wage growth is losing to inflation growth, causing real money to lose its value compared the past. We will share our story through different graphs. 
+
+As economists we intent to help economic journalists who will want this information to write newspaper articles on economic news on the topic “U.S Minimum Wage by State from 1968 to 2020”. The graphs that we are going to show will give them a clearer understanding of the U.S minimum wages. 
+
+
+## Graph 1: State vs. Real Minimum Wage Over Time 
+![](Grap1A.png)
+
+In this graph, we describe a map of United States, outlining each state and Hawaii, in which we should the real, effective minimum wage in each state over the span of about 5 decades. The viewer of this graph has control over what year is being displayed. Moreover, through the use of our color, foster comparison between the states and their respective minimum wages as darker color indicates higher minimum wage. In addition to this, viewers can hover over each state and see the specific minimum wages if they prefer.  
+
+Through the use of our graph, viewers can understand what the distribution of real effective wages, the actual value of their minimum wages in terms of 2020 dollars, will be. Using this metric, we can see the growth or decline of real, minimum wage over time. We can also use this to delve deeper into specific states. As an economist writer, we can see that many states that are closer to the ocean tend to generally have higher minimum wages. We would want to do further research into understand the relationship between geographical location and minimum wage and see if cost of living is higher in those areas. 
+
+## Graph 2: Top 5 States with Higest Average Minimum Wage
+![](Graph2.png)
+The graph shows the top 5 States that have the highest average effective real minimum wages in the United States from 1968 to 2020. Viewers can hover over each bar to see more detail about the state. 
+
+Firstly, we found the top 5 states that has the highest average effective, real minimum wages over the span of the 5 decades and explored the connection and relationship between the states and wages. We highlight Washington State since it has the highest minimum wage compared to other states. 
+
+There are 5 states: Washington, District of Columbia, Massachusetts, California, and Arizona. What those states have in common is they are on the coastal states, or is closer to the sea therefore which could see a relationship between geographical location and minimum wages. Through our exploration, assume that those states have more opportunities and more traffic due to them being hubs, thus increasing their average minimum wage. 
+
+Moreover, people can use this data to observe on which States that has the highest minimum wage in term if they want to move or seeking for jobs where they can earn more. On the Other hand, the government can use this data to implement the solution to increase the minimum wage in the other states as well. We would recommend increasing the minimum wage since the minimum wage would not cover all the expenses.
+
+## Graph 3: Real and Actual Federal Minimum Wage 
+![](Graph3.png)
+
+The line graph describes the real federal minimum wage and actual federal minimum wage between 1968 and 2020. The actual federal minimum wage reflects the minimum wage that employees will receive at a specific period. On the other hand, the real federal minimum wage helps people compare the minimum wage between years while taking the value changes in response to inflation into consideration. 
+
+We graphed our “Real and Actual Federal Minimum Wage” by using the original data points since the Federal minimum wage is constant for all states each year. 
+
+By looking at the graph, we can clearly see that the Real Federal Minimum Wage increases over the years. However, in 2020 dollars, the actual federal minimum wage slightly decreased. In details, the actual federal minimum wage in 1968 is at \$8.5 but the actual federal minimum wage in 2020 is $7.25. This is the effect of inflation, in other words, the increase in actual federal minimum wage cannot cover the increase in inflation rate. There is a pattern that you can totally see. Every time the actual minimum wage stays the same over years, there will be a decrease in the real minimum wage due to the inflation and the decreasing in money value. 
+
+As econonomist, we urge the government to consider adjusting the minimum wage in order to ensure that minimum wage workers can make an effort to live in today’s economy. 
+
+## Graph 4: State and Federal Real, Average, Effective Minimum Wage
+![](Graph4.png)
+In this graph, we want to show the real minimum wage overtime in both state and federal levels, as real dollars (in terms of 2020 dollars) tell us the true value of wage because it strips out the effects of inflation. To get the clean data for this graph, we first filter out state minimum wage that is equal to or smaller than 0. For there were many states did not have a state minimum wage back in 1960-70 and including 0 in our data would lower the average minimum wage. 
+
+The graph shows the real State and Federal Minimum wage over time. Both State and Federal average minimum wages follow certain trends over time like both falling and rising at the same period. If we look more into the fall time and economic events back then, we can see the real minimum wage corresponding to the economic environment such as recession and expansion. This graph also shows that the federal minimum wage is higher than in the states from 1965 to 2002, it shows that some states have lower state wages than federal. It’s mainly because a state does not have to have a minimum wage law, and a state with its own law can make the wage lower, equal to or higher than the federal minimum wage., but federal minimum wage overrides state if the state wage is lower. Every state has different Industrial structures: some states are more agricultural-focus, and some are commerce-focus.  However, we can also see that the average state minimum wage had to surpass the federal since 2014. 
+
+We suggest the government encourage state to reexamine their state minimum wage based on their state economy structures standard of living to see if minimum wage workers can afford to live with those wages in their state. 
+
+## Graph 5: Real Average Minimum Wage Change in (%) from 1968 
+![](Graph5.png)
+This Graph shows the Running Total of Real Minimum Wage Growth, Year over Year. Real Wage Growth meaning how much Minimum Wage has fallen or grown after accounting for inflation. In the toolkit the statistic that will show this will be the ‘Total Real Wage Growth since 1968’. This number represents the percentage difference between Minimum Wage and Inflation since the base year (1968). For example, the value for Total Real Wage Growth in 1979 is 11.98%, this means that since the base year, accounting for inflation, Minimum Wage is 11.98% higher than it was in 1968. 
+
+The Other value in the Toolkit is ‘(YoY) Real Wage Growth’. This Number represents how much the Total Real Wage Growth has changed from the year prior. Going back to 1979 we see the value was 16.54%, this means that compared to 1978, Total Real Wage Growth has increased by 16.54 percentage points, (-4.55% + 16.54% = 11.98%). Visualizing these two numbers, the Real Wage Growth is represented by where the top of the bar meets the % value on the Y-axis, and the YoY Growth is represented by the length of the bar. The bar is blue if YoY Growth is positive, and Orange if it is negative. 
+
+This Graph shows an interesting story of the relationship between inflation and Wage Growth. We see that up until around 1979, that State and Federal government tried to ensure that Minimum Wage was outpacing inflation. In fact, 1979 was the best year to be a minimum wage worker, with Real Wages growing about 17% compared to inflation compared to the base year. After 1979, however minimum wage was not being maintained to keep up with inflation, this lines up perfectly with the Presidency of Ronald Reagan and the Reaganomic policies of the 1980s which did not believe in increasing minimum wage. This was at its worst in 1990, where minimum wage on average had lost around 27% of its value compared to inflation. 2007 was the turning point to increase minimum wage again because the great recession. The recession caused minimum wage to become a greater issue for people and politicians, and we see a greater effort by governments to increase minimum wage from this point forward. However, even with that increased effort minimum wage has still lost about 2% of its value compared to 1968. This is vital to know because in the past 15 years there has been such a strong effort to increase minimum wage but on average you are still better being a minimum wage worker in 1968 compared to now. Based off this we recommend the U.S increases the federal minimum wage to at least match inflation growth since 1968.
+
+
